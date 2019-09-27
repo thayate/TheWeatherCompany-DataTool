@@ -26,6 +26,6 @@ Pandasを導入していない場合には下記のコマンドでインスト�
 `$ pip install pandas`
 
 ## Usage
-各Data Packageのフォルダに移動して、Pythonコマンドを実行します。
-`$ cd Enhanced-Forecast`
-`$ python v3_FoDPull.py`
+各Data Packageのフォルダに移動して、Pythonコマンドを実行します。  
+`$ cd Enhanced-Forecast
+$ python v3_FoDPull.py`
