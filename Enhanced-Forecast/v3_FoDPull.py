@@ -12,6 +12,8 @@ lon = '138.991'
 apiKey = ''
 
 url = 'https://api.weather.com/v3/wx/forecast/hourly/15day?geocode=' + lat + "," + lon
+
+#パラメータの定義
 payload = {'units': 'm', 'format': 'json', 'language': 'ja-JP'}
 payload['apiKey'] = apiKey
 
