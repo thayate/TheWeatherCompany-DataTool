@@ -30,6 +30,8 @@ formmated_utcEndDate = formmated_localEndDate - datetime.timedelta(hours=9)
 # APIパラメータの指定
 payload = {'units': 'm', 'format': 'csv'}
 payload['apiKey'] = apiKey
+
+#Exponential Backoffの初期値を設定
 backoff_period = 5
 
 for index, row in locations.iterrows():
@@ -50,7 +52,9 @@ for index, row in locations.iterrows():
             try:
                 response = requests.get(url, params=payload)
                 if response.status_code == 200:
+                    #API Responceをdataframeで受け取る
                     df1 = pd.read_csv(io.BytesIO(response.content), sep=",")
+
                     df = df.append(df1, ignore_index=True)
                     print(row['name'] + ': ' + str(calcStartDate) + '-' + str(calcEndDate) + '(UTC time) completed')
                     backoff_period = 5
