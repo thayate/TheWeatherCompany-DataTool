@@ -1,5 +1,5 @@
 # TheWeatherCompany-DataTool
-====
+
 
 ## Overview
 The Weather Companyが提供する、Weather Data Packageをより快適に使うためのツール
@@ -19,7 +19,13 @@ Enhanced Forecast - 15-Day Hourly Forecast([仕様書](https://ibm.co/v3HFap))�
 
 - Python 3.x
 - Pandas
+- 該当Data PackageのAPI Key
 
 Pandasを導入していない場合には下記のコマンドでインストールしてください。
 
 `$ pip install pandas`
+
+## Usage
+各Data Packageのフォルダに移動して、Pythonコマンドを実行します。
+`$ cd Enhanced-Forecast`
+`$ python v3_FoDPull.py`
