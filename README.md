@@ -1,7 +1,7 @@
 # TheWeatherCompany-DataTool
 ====
 
-##Overview
+## Overview
 The Weather Companyが提供する、Weather Data Packageをより快適に使うためのツール
 https://business.weather.com/products/weather-data-packages
 
@@ -17,8 +17,8 @@ Enhanced Forecast - 15-Day Hourly Forecast[(仕様書)](https://ibm.co/v3HFap)�
 ## Dependency
 ソースコードを実行するには、下記のソフトウェアが必要です。
 
-Python 3.x
-Pandas
+-Python 3.x
+-Pandas
 
 Pandasを導入していない場合には下記のコマンドでインストールしてください。
 
