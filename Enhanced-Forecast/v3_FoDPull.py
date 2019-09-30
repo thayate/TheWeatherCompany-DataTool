@@ -1,5 +1,6 @@
-import requests, json, csv, math
-# from urllib.request import urlopen
+
+#! coding: utf-8
+import requests, json, csv
 import datetime
 import pandas as pd
 from dateutil.relativedelta import relativedelta
@@ -25,3 +26,4 @@ df['validTimeLocal'] = pd.to_datetime(df['validTimeLocal'])
 df['validTimeLocal'] = df['validTimeLocal'] + datetime.timedelta(hours=9) #JSTに変換（+9時間)
 
 df.to_csv("filename.csv", index = False) #csvに出力
+#df.to_csv("filename.csv", index = False, encoding = "shift-jis") #csv(shift-jis)に出力
